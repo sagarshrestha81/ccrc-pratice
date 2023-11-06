@@ -18,7 +18,9 @@ body {
     font-weight: 400;
     line-height: 140%;
 }
-
+a{
+    text-decoration: none;
+}
 .primary-font {
     font-family: "Space Mono", monospace;
 }
@@ -138,4 +140,54 @@ color: #fff;
 }
 .button-outline{
     background: #2B2B2B;
+}
+
+.button-icon::before{
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    
+    
+}
+.button-rocket::before{
+    background: url(./../images/icon/RocketLaunch.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.button-user::before{
+    background: url(./../images/icon/User.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.button-user::before{
+    background: url(./../images/icon/User.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.button-envelope::before{
+    background: url(./../images/icon/EnvelopeSimple.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.button-eye::before{
+    background: url(./../images/icon/Eye.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+section{
+    padding: 80px 120px;
+}
+main{
+    background: #2b2b2b;
+    color: #fff;
+}
+img{
+    width: 100%;
+    height: auto;
 }
