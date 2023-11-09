@@ -101,3 +101,126 @@ background:  #3B3B3B;
     width: 24px;
     height: 24px;
  }
+
+ /* trending section */
+
+.trending-collection-row{
+   display: flex;
+   gap: 30px;
+   width: 100%;
+}
+.trending-collection-card{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   max-width: 330px;
+   width: 100%;
+   justify-content: space-between;
+   transition: all ease .3s;
+   top: 0;
+}
+.trending-collection-card:hover{
+  top: -10px;
+  cursor: pointer;
+}
+.trending-collection-card-images{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+.trending-collection-card-images img.main-image{
+   border-radius: 20px;
+   height: 330px;
+   object-fit: cover;
+}
+.trending-collection-card-image-additional{
+   display: flex;
+   gap: 15px;
+}
+.trending-collection-card-image-additional img{
+   width: 33.33%;
+   border-radius: 20px;
+   height: 100px;
+   object-fit: cover;
+}
+.trending-collection-card-image-additional .more-images{
+   width: 33.33%;
+   border-radius: 20px;
+background: var(--primary-color);
+   display: flex;
+   padding: 32px 15px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.trending-collection-detail{
+   display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+.trending-collection-detail-avatar{
+   display: flex;
+   gap: 12px;
+   align-items: center;
+}
+.trending-collection-detail-avatar img{
+  width: 24px;
+  height: 24px;
+}
+.top-creators-row{
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;
+}
+.top-creator-single{
+   position: relative;
+   max-width: 240px;
+   width: 100%;
+   display: flex;
+padding: 20px;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+flex: 1 0 0;
+border-radius: 20px;
+background: #3B3B3B;
+}
+.top-creator-single .ranking-number{
+   display: flex;
+   width: 30px;
+   height: 30px;
+   align-items: center;
+   position: absolute;
+   left: 20px;
+   top: 18px;
+   border-radius: 50%;
+   background: #2B2B2B;
+   justify-content: center;
+}
+.top-creator-single img{
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.avatar-detail{
+   display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5px;
+align-self: stretch;
+}
+.avatar-detail label{
+   color: #858584;
+}
+.additional-info{
+   display: flex;
+   gap: 10px;
+}
+.additional-info label,.additional-info span{
+   white-space: nowrap;
+}
